@@ -11,3 +11,10 @@
 
 # Página Nossos Pratos
     Apresenta de início 10 pratos exemplares com um botão ao final com a funcionalidade de tornar visível mais 10 pratos que esse restaurante fictício possui.
+
+# Página Formulário
+    Possui um formulário básico exigindo os campos Nome, Email, Telefone, Celular, data atual e Mensagem. Tais campos são obrigatórios.
+    Utiliza-se o JQuery Validate e e o JQuery Mask para fazer a validação do formulário e colocar a Máscara respectivamente.
+    Utiliza-se o JQuery additional-methods para utilizar de métodos adicionais implementados no JQuery Validate.
+    Utiliza-se o JQuery messages_pt_BR para tornar as mensagens enviadas pelo JQuery Validate em Português Brasileiro.
+    Utiliza-se o JQuery-UI para aplicar a funcionalidade widget no campo de texto para data atual [datepicker()]
