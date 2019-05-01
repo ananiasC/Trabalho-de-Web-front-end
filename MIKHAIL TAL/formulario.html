@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Ananias C. de Oliveira">
+	<title>Formulário</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
+
+	<link rel="icon" href="img/logo_mobile.png">
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mask.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/additional-methods.js"></script>
+	<script src="js/messages_pt_BR.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+	<!-- CABECALHO -->
+
+	<header class="cabecalho">
+		<a href="index.html"><h1 class="logo">Restaurante Mikhail</h1></a>
+
+		<button class="btn_menu"><img src="img/menu_icon.png"></button>
+
+		<nav class="nav_menu">
+			<button class="btn_close">
+				<a href="#">
+					<b>x</b>
+				</a>
+			</button>
+			<ul class="ul_menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobrenos.html">Sobre Nós</a></li>
+				<li><a href="galeriadepratos.html">Nossos Pratos</a></li>
+				<li><a href="formulario.html">Formulário</a></li>
+			</ul>
+		</nav>        
+	</header>
+
+	<!-- Formulario -->
+	<div id="formulario">
+		<form action="" id="formularioDeMensagem">
+			<table>
+				<tr>
+					<th colspan="2">
+						Formulário
+					</th>
+				</tr>
+				<tr>
+					<td>Nome: </td>
+					<td>
+						<input type="text" class="campo" name="nome" id="nome">
+					</td>
+				</tr>
+				<tr>
+					<td>Email: </td>
+					<td>
+						<input type="email" class="campo" name="email" id="email">
+					</td>
+				</tr>
+				<tr>
+					<td>Telefone: </td>
+					<td>
+						<input type="text" class="campo" name="telefone" id="telefone">
+					</td>
+				</tr>
+				<tr>
+					<td>Celular: </td>
+					<td>
+						<input type="text" class="campo" name="celular" id="celular">
+					</td>
+				</tr>
+				<tr>
+					<td>Data atual:</td>
+					<td>
+						<input type="text" name="data" class="campo" id="data">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">Mensagem: </td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<textarea name="mensagem" id="mensagem"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+							<input type="submit" value="Enviar" class="botao">
+							<input type="reset" value="Limpar" class="botao">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<!-- Rodape -->
+	<footer class="rodape">
+		<div class="social_icons">
+			<a href="https://www.facebook.com/ananias.caetano.56" target="_blank" title="facebook">
+				<img src="img/facebook_ico.png">
+			</a>
+			<a href="https://www.instagram.com/ananiascaetano/?hl=pt-br" target="_blank" title="instagram">
+				<img src="img/instagram_ico.png">
+			</a>
+			<a href="https://twitter.com/ananiascaetano1" target="_blank" title="twitter">
+				<img src="img/twitter_ico.png">
+			</a>
+		</div>
+
+		<h3>
+			<b>Telefone:</b> (85)9011-1960
+		</h3>
+		<h3>
+			<b>Fundado em:</b> 9 de novembro de 1936
+		</h3>
+		<h3>
+			<b>Desenvolvedor:</b> Ananias C. de Oliveira
+		</h3>
+		<p class="copyright">
+			Copyright © Mikhail Tal. Todos os direitos reservados.
+		</p>
+	</footer>
+</body>
+</html>

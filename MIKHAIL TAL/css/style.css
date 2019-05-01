@@ -1,0 +1,425 @@
+/* Arquivo CSS */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* Cabecalho */
+
+.cabecalho {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+}
+.logo {
+    width: 56px;
+    height: 56px;
+    float: left;
+    background: url(../img/logo_mobile.png) center center/60px no-repeat;
+    font-size: 0;
+}
+
+.btn_menu{
+    height: 40px;
+    float: right;
+    border-radius: 40px;
+    background: linear-gradient(to right,#aaa,white);
+}
+
+/* Menu */
+
+.nav_menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0, 0.9);
+    top: 0%;
+    left: 0%;
+}
+ .btn_close{
+     width: 20px;
+     height: 20px;
+     float: right;
+     border-radius: 20px;
+     background-color: #000;
+     margin-right: 5%;
+     margin-top: 5%;
+ }
+ .btn_close a{
+     color: #fff;
+     cursor: pointer;
+ }
+
+ .nav_menu ul{
+     width: 100%;
+     float: left;
+     text-align: center;
+ }
+
+ .nav_menu ul li{
+     padding: 4%;
+ }
+
+ .nav_menu ul li a{
+     font-size: 2em;
+     color: #fff;
+     padding: 4% 3%;
+ }
+
+ .nav_menu ul li a:hover {
+     border: 1px solid #da6709;
+ }
+
+ /* BANNER */
+.banner{
+    width: 100%;
+}
+
+/* PRATOS */
+
+.pratos{
+    float: left;
+    padding: 3% 0%;
+}
+.prato{
+    width: 100%;
+    float: left;
+    margin-bottom: 3%;
+    padding: 2% 0%;
+}
+.prato img{
+    width: 100%;
+}
+
+.prato h4{
+    font-weight:bold;
+    margin-bottom: 1%;
+    font-size: 1em;
+}
+.prato p{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1em;
+}
+.prato b{
+    color: rgb(0, 0, 0);
+}
+
+/* pratos a mais da pagina de nossos pratos*/
+
+#maispratos{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 4px;
+    height: 35px;
+}
+
+#maispratos:hover{
+    background: rgba(90, 90, 90, 0.8);
+}
+
+#outrospratos{
+    display: none;
+}
+
+ /* RODAPE */
+
+ .rodape{
+     width: 100%;
+     float: left;
+     text-align: center;
+     padding: 2% 3%;
+     background: linear-gradient(to right,#0080ff,black);
+ }
+
+ .rodape h3{
+     padding: 1.5%;
+     color:rgba(255, 255, 255, 0.7);
+ }
+
+ .rodape h3 b{
+    font-weight:bold;
+ }
+
+ .copyright{
+     color:rgba(255, 255, 255, 0.7);
+     padding: 1.5%;
+ }
+
+/* FORMULÁRIO */
+
+#formulario{
+    float: left;
+    color:rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+#formulario table{
+    width: 100%;
+    padding: 1% 1%;
+}
+
+#formulario table tr{
+    padding: 1% 1%;
+}
+
+#formulario table tr th{
+    font-weight:bold;
+}
+
+#formulario table tr td{
+    padding: 1% 0%;
+}
+
+.campo {
+    border: 1px solid #000;
+    height: 30px;
+    width: 95%;
+    border-radius: 5px;
+    margin-top: 1%;
+}
+
+#formulario textarea{
+    border: 1px solid #000;
+    width: 100%;
+    height: 50px;
+}
+
+.botao{
+    width: 48%;
+    padding: 1% 1%;
+    border-radius: 4px;
+}
+.botao:hover{
+    background: rgba(90, 90, 90, 0.8);
+}
+
+/* SOBRE NÓS PAG */
+
+.logoMikhail{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.mikhailtal{
+    width: 100%;
+    padding: 2% 0%;
+}
+.paragrafo{
+    width: 100%;
+}
+
+ /* MOBILE FIRST - SMALL SMARTPHONES */
+
+ @media screen and (min-width:480px){
+    .logo {
+        width: 140px;
+        background: url(../img/logo_mikhail.png) center center/140px no-repeat;
+    }
+
+    /* Formulario */
+    
+    #formulario table{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    /*SOBRE NOS PAG*/
+
+    .logoMikhail{
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    
+    .mikhailtal{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 2% 0%;
+    }
+    .paragrafo{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+ }
+
+ /* TABLE */
+ @media screen and (min-width:768px){
+    .prato{
+        width: 46%;
+        height: 550px;
+        float: left;
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 1.5em;
+    }
+
+    .prato h4{
+        font-size: 0.8em;
+    }
+    .prato p{
+        font-size: 0.6em;
+    }
+    
+    #maispratos{
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    
+    .rodape{
+        font-size: 1em;
+    }
+
+    /* Formulario */
+    #formulario table{
+        width: 50%;
+    }
+
+    /*SOBRE NOS PAG*/
+
+    .logoMikhail{
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    
+    .mikhailtal{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 2% 0%;
+    }
+    .paragrafo{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+ }
+
+ /* TABLES AND DESKTOPS*/
+
+ @media screen and (min-width:960px){
+    .prato{
+        width: 30%;
+        float: left;
+        margin-right: 1%;
+        margin-top: -6%;
+    }
+
+    .prato img{
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition:  all 0.3s;
+    }
+
+    .prato img:hover{
+        border-radius: 4px;
+        -moz-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    .btn_menu{
+        display: none;
+    }
+    .btn_close{
+        display: none;
+    }
+    .nav_menu{
+        width:auto;
+        height: 40px;
+        line-height: 20px;
+        float:right;
+        background-color: white;
+        display: block !important;
+        position: static;
+    }
+    .nav_menu ul li{
+        padding: 0;
+        float: left;
+    }
+    .nav_menu ul li a{
+        color: #130400;
+        font-size: 1em;
+        padding:0%;
+        margin-left: 1%
+    }
+    .nav_menu ul li a:hover{
+        border: none;
+        color: #0080ff;
+    }
+
+    #formulario{
+        margin-top: -1%;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    /*SOBRE NOS PAG*/
+
+    .logoMikhail{
+        width: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+    
+    .mikhailtal{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 2% 0%;
+    }
+    .paragrafo{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+ }
+
+ /* LARGES DEVICES - WIDE SCREENS */
+
+ @media screen and (min-width:1280px){
+    .logo {
+        width: 160px;
+        height: 70px;
+        background: url(../img/logo_mikhail.png) center center/160px no-repeat;
+    }
+
+    .banner{
+        margin-top: -1%;
+    }
+
+    #formulario{
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+    }
+ }
